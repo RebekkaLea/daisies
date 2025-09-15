@@ -1,0 +1,75 @@
+:root {
+    --ucd-blue: #002855;
+    --ucd-gold: #ffd100;
+    --ucd-light: #f5f5f5;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--ucd-light);
+    color: var(--ucd-blue);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--ucd-blue);
+    color: var(--ucd-gold);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 .5rem 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--ucd-gold);
+    font-weight: bold;
+    padding: .25rem .75rem;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+nav a.active, nav a:hover {
+    background-color: var(--ucd-gold);
+    color: var(--ucd-blue);
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,40,85,0.08);
+}
+
+.building-details h2 {
+    color: var(--ucd-blue);
+    border-bottom: 2px solid var(--ucd-gold);
+    padding-bottom: .2rem;
+    margin-top: 1.5rem;
+}
+
+footer {
+    background-color: var(--ucd-blue);
+    color: var(--ucd-gold);
+    text-align: center;
+    padding: .75rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
