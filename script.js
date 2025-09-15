@@ -1,0 +1,1 @@
+// Optional JS for navigation interactivity or future features
